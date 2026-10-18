@@ -1,59 +1,27 @@
 # PrintPrep
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.6.
+Built with **Modern Angular** (Standalone Components, Signals), **NgRx**, **Angular Material** and **SCSS**.
 
-## Development server
+---
 
-To start a local development server, run:
+### Real-World Purpose & Problem Solved
 
-```bash
-ng serve
-```
+Built specifically to streamline operational workflows and eliminate bottlenecks in our family print shop. During peak hours, long customer queues are delayed by manual file picking, dark-mode mobile screenshots wasting expensive toner, and complex PDF handling. PrintPrep accelerates the prepress workflow by providing instant screenshot cropping, ink-saving color inversion when needed, PDF merging, and unified file queuing—all directly in the browser.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **Unified Multi-File Print Queue:** Automatically parses attached images and PDFs from Gmail or local storage into a single sequential A4 preview carousel.
+* **Ink-Saver Color Inversion:** Offloads pixel manipulation to an Angular **Web Worker** to instantly convert dark UI backgrounds to white without blocking the UI thread.
+* **Canvas Screenshot Cropping:** Integrated tool to crop out unwanted parts of an image.
+* **OS Share Target Integration:** Registered as a native mobile/desktop Share Target (`share_target`) to ingest shared files directly into IndexedDB.
+* **Image-to-PDF & PDF Merging:** Tools for reordering images and merging distinct PDF files using drag-and-drop mechanics.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Tech Stack & Architecture
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* **Frontend:** Angular 22
+* **State Management:** NgRx (Store / Component Store)
+* **UI & Styling:** Angular Material, SCSS
